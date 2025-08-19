@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Lansweeper Auto Tab Opener",
+  "description": "An extension that pre-fills known fields of common created tickets in Lansweeper",
+  "version": "1.0",
+  "permissions": ["tabs", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["http://lansweeper:*/helpdesk/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
