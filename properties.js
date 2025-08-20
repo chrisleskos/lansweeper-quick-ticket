@@ -1,14 +1,16 @@
 export const properties = {
   mil: {
     specialParameter: "quick_ticket_tpent",
-    lansweeperHost: "http:lansweeper:82",
-    newTicketURL: "/NewTicket.aspx",
+    lansweeperHost: "google.com",
+    newTicketURL: "/",
+    chromeMessagePrefix: "TPENT_QUICK_TICKET",
     dom: {
       subjectFieldId: "",
       ticketTypeFieldId: "",
       conferenceCallFromDateFieldId: "",
       conferenceCallToDateFieldId: "",
       conferenceCallMaterialsFieldId: "",
+      testFieldId: "#APjFqb",
     },
     content: {
       resetMod: {
@@ -25,6 +27,11 @@ export const properties = {
         id: "3",
         subject: "Τηλεδιάσκεψη",
         ticketType: "",
+      },
+      testTicket: {
+        id: "0",
+        subject: "Test ticket subject",
+        ticketType: "test",
       },
     },
   },

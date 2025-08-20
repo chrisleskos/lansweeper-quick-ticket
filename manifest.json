@@ -11,12 +11,13 @@
   "permissions": ["tabs", "storage"],
   "content_scripts": [
     {
-      "matches": ["http://lansweeper:*/helpdesk/*"],
+      "matches": ["<all_urls>"],
       "js": ["content.js"]
     }
   ],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "type": "module"
   },
   "action": {
     "default_popup": "popup.html",
