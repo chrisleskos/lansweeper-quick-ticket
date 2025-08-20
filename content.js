@@ -6,7 +6,7 @@ import { properties } from "./properties.js";
 
   chrome.runtime.onMessage.addListener((obj, sender, response) => {
     const { type } = obj;
-    if (type === config.content.resetMod) {
+    if (type === config.content.resetMod.id) {
       tsubject = document.querySelector(config.dom.subjectFieldId);
       tsubject.value = config.dom.subjectFieldId;
     }

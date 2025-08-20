@@ -1,7 +1,8 @@
-const properties = {
+export const properties = {
   mil: {
     specialParameter: "quick_ticket_tpent",
     lansweeperHost: "http:lansweeper:82",
+    newTicketURL: "/NewTicket.aspx",
     dom: {
       subjectFieldId: "",
       ticketTypeFieldId: "",

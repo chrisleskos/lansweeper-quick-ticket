@@ -10,7 +10,7 @@
  *  }
  */
 
-export async function loadConfig() {
+export const loadConfig = async () => {
   const res = await fetch(chrome.runtime.getURL("env.json"));
   return res.json();
-}
+};

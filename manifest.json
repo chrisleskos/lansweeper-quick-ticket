@@ -2,6 +2,11 @@
   "manifest_version": 3,
   "name": "Lansweeper Auto Tab Opener",
   "description": "An extension that pre-fills known fields of common created tickets in Lansweeper",
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
   "version": "1.0",
   "permissions": ["tabs", "storage"],
   "content_scripts": [
@@ -14,6 +19,16 @@
     "service_worker": "background.js"
   },
   "action": {
-    "default_popup": "popup.html"
-  }
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon16.png",
+      "48": "assets/icons/icon48.png"
+    }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/ypetha-logo.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
