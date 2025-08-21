@@ -5,7 +5,7 @@ export const properties = {
     newTicketURL: "/",
     chromeMessagePrefix: "TPENT_QUICK_TICKET",
     dom: {
-      subjectFieldId: "",
+      subjectFieldId: "#APjFqb",
       ticketTypeFieldId: "",
       conferenceCallFromDateFieldId: "",
       conferenceCallToDateFieldId: "",
