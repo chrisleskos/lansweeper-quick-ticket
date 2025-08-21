@@ -12,9 +12,11 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
       url.pathname.endsWith(config.newTicketURL) &&
       url.searchParams.has(config.specialParameter)
     )
+      // Content script can't import properties.js since it's not a module so it's passed in message' body
       chrome.tabs.sendMessage(tabId, {
         type: config.chromeMessagePrefix,
         id: url.searchParams.get(config.specialParameter),
+        config: config,
       });
   }
 });
