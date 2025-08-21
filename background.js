@@ -6,9 +6,9 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
 
   if (changeInfo.status === "complete" && tab.url) {
     const url = new URL(tab.url);
-
+    const hostWithNoProtocolPrefix = config.lansweeperHost.split("//")[1];
     if (
-      url.href.includes(config.lansweeperHost) &&
+      url.href.includes(hostWithNoProtocolPrefix) &&
       url.pathname.endsWith(config.newTicketURL) &&
       url.searchParams.has(config.specialParameter)
     )

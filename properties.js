@@ -1,7 +1,7 @@
 export const properties = {
   mil: {
     specialParameter: "quick_ticket_tpent",
-    lansweeperHost: "google.com",
+    lansweeperHost: "https://google.com",
     newTicketURL: "/",
     chromeMessagePrefix: "TPENT_QUICK_TICKET",
     dom: {
